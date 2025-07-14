@@ -1,17 +1,17 @@
 {
-  "id": "com.example.plugin",
-  "name": "Example Plugin",
-  "main": "dist/main.js",
+       "id": "com.example.plugin",
+     "name": "Example Plugin",
+     "main": "plugin.js",
   "version": "1.0.0",
-  "readme": "readme.md",
-  "icon": "icon.png",
-  "files": ["worker.js"],
+   "readme": "readme.md",
+     "icon": "icon.png",
+    "files": ["worker.js"],
   "minVersionCode": 292,
-  "price": 0,
-  "author": {
-    "name": "Example Author",
-    "email": "example@email.com",
-    "url": "https://example.com",
+    "price": 0,
+   "author": {
+      "name": "Example Author",
+     "email": "example@email.com",
+       "url": "https://example.com",
     "github": "example"
   }
 }
