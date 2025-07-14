@@ -7,5 +7,5 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
 #### official examples:
 
 - [JavaScript (with Bundler)](https://github.com/Acode-Foundation/acode-plugin)
-- - [TypeScriptScript](https://github.com/Acode-Foundation/AcodeTSTemplate)
+- [TypeScript](https://github.com/Acode-Foundation/AcodeTSTemplate)
 
