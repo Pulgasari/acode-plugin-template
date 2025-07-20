@@ -113,7 +113,11 @@ const _EditorManager = editorManager;
 const _Files         = editorManager.editor;
 ```
 
-### Register Commands
+---
+
+### Commands
+
+#### Register Commands
 
 ```JS
 editor.editorManager.commands.removeCommand({ 
@@ -130,7 +134,7 @@ _Commands.addCommand({
 });
 ```
 
-### Unregister Commdands
+#### Unregister Commands
 
 ```JS
 editor.editorManager.commands.removeCommand( pluginId + '.hide' );
@@ -138,5 +142,12 @@ editor.editorManager.commands.removeCommand( pluginId + '.hide' );
 // if _Commands is defined
 _Commands.removeCommand( pluginId + '.hide' );
 ```
+
+#### Run Commands
+
+```JS
+acode.exec( pluginId + '.hide` );
+```
+
 
 
