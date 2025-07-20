@@ -116,7 +116,7 @@ const _Files         = editorManager.editor;
 ### Register Commands
 
 ```JS
-editor.editorManager.commands.addCommand({ 
+editor.editorManager.commands.removeCommand({ 
   name: pluginId + '.hide', 
   exec: () => plugin.hide(), 
   description: 'Hide Example Plugin Panel'
@@ -129,3 +129,14 @@ _Commands.addCommand({
   description: 'Hide Example Plugin Panel'
 });
 ```
+
+### Unregister Commdands
+
+```JS
+editor.editorManager.commands.removeCommand( pluginId + '.hide' );
+
+// if _Commands is defined
+_Commands.removeCommand( pluginId + '.hide' );
+```
+
+
