@@ -43,7 +43,7 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
       name    : 'Example Plugin',
       $page   : null,
       init    : (baseUrl, $page) => {},
-      destroy : (baseUrl, $page) => {},
+      destroy : () => {},
     };
     const pluginId   = 'example-plugin';
     const pluginName = 'Example Plugin';
@@ -111,4 +111,19 @@ const _Commands      = editorManager.editor.commands;
 const _Editor        = editorManager.editor;
 const _EditorManager = editorManager;
 const _Files         = editorManager.editor;
+```
+
+### Register Commands
+
+```JS
+editor.editorManager.commands.addCommand({ 
+  name: pluginId + '.hide', 
+  exec: () => plugin.hide(), 
+  description: 'Hide Example Plugin Panel' });
+
+// if _Commands is defined
+_Commands.addCommand({ 
+  name: pluginId + '.hide', 
+  exec: () => plugin.hide(), 
+  description: 'Hide Example Plugin Panel' });
 ```
