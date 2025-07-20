@@ -15,7 +15,7 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
 
 ```JS
 (function(){
-	if(window.acode){
+  if(window.acode){
     const pluginId   = 'example-plugin';
     const pluginName = 'Example Plugin';
     // Mount Plugin
