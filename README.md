@@ -20,7 +20,6 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
     const pluginName = 'Example Plugin';
     // Mount Plugin
     acode.setPluginInit( pluginId, async (baseUrl, $page, settings) => {
-      // Init Plugin
       // ... do something here ...
       // Say Hello
       window.toast(`${pluginName} mounted.`);  
