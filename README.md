@@ -35,6 +35,7 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
     });
   }
 })();
+```
 
 ### Access Official Acode Modules
 
