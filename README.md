@@ -119,11 +119,13 @@ const _Files         = editorManager.editor;
 editor.editorManager.commands.addCommand({ 
   name: pluginId + '.hide', 
   exec: () => plugin.hide(), 
-  description: 'Hide Example Plugin Panel' });
+  description: 'Hide Example Plugin Panel'
+});
 
 // if _Commands is defined
 _Commands.addCommand({ 
   name: pluginId + '.hide', 
   exec: () => plugin.hide(), 
-  description: 'Hide Example Plugin Panel' });
+  description: 'Hide Example Plugin Panel'
+});
 ```
