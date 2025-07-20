@@ -21,17 +21,45 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
     // Mount Plugin
     acode.setPluginInit( pluginId, async (baseUrl, $page, settings) => {
       // Init Plugin
-      plugin.baseUrl = baseUrl;
-      await plugin.init();
+      // ... do something here ...
       // Say Hello
       window.toast(`${pluginName} mounted.`);  
     });
     // Unmount Plugin
     acode.setPluginUnmount( pluginId, () => {
+      // ... do something here ...
+      // Say Bye
+      window.toast(`${pluginName} unmounted.`);  
+    });
+  }
+})();
+```
+
+```JS
+(function(){
+  if(window.acode){
+    const plugin = {
+      id      : 'example-plugin',
+      name    : 'Example Plugin',
+      $page   : null,
+      init    : (baseUrl, $page) => {},
+      destroy : (baseUrl, $page) => {},
+    };
+    const pluginId   = 'example-plugin';
+    const pluginName = 'Example Plugin';
+    // Mount Plugin
+    acode.setPluginInit( plugin.id, async (baseUrl, $page, settings) => {
+      // Init Plugin
+      await plugin.init( baseUrl, $page );
+      // Say Hello
+      window.toast(`${plugin.name} mounted.`);  
+    });
+    // Unmount Plugin
+    acode.setPluginUnmount( plugin.id, () => {
       // Destroy Plugin
       plugin.destroy();
       // Say Bye
-      window.toast(`${pluginName} unmounted.`);  
+      window.toast(`${plugin.name} unmounted.`);  
     });
   }
 })();
