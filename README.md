@@ -67,6 +67,45 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
 ### Access Official Acode Modules
 
 ```JS
+const AcodeAceModes            = acode.require('aceModes'); // https://acode-plugin-docs.vercel.app/docs/utilities/ace-modes
+const AcodeActionStack         = acode.require('actionStack'); // https://acode-plugin-docs.vercel.app/docs/advanced-apis/action-stack
+const AcodeColor               = acode.require('Color'); // https://acode-plugin-docs.vercel.app/docs/helpers/color
+const AcodeColorPicker         = acode.require('colorPicker'); // https://acode-plugin-docs.vercel.app/docs/ui-components/dialogs/color-picker
+const AcodeContextMenu         = acode.require('contextmenu'); // https://acode-plugin-docs.vercel.app/docs/interface-apis/context-menu
+const AcodeCreateKeyboardEvent = acode.require('createKeyboardEvent'); // https://acode-plugin-docs.vercel.app/docs/utilities/keyboard-event
+const AcodeDialogBox           = acode.require('dialogBox'); // https://acode-plugin-docs.vercel.app/docs/ui-components/dialogs/custom-dialog
+const AcodeEncodings           = acode.require('encodings'); // https://acode-plugin-docs.vercel.app/docs/utilities/encoding
+const AcodeFileBrowser         = acode.require('fileBrowser'); // https://acode-plugin-docs.vercel.app/docs/editor-components/file-browser
+const AcodeFileList            = acode.require('fileList'); // https://acode-plugin-docs.vercel.app/docs/editor-components/file-list
+const AcodeFonts               = acode.require('fonts'); // https://acode-plugin-docs.vercel.app/docs/helpers/fonts
+const AcodeFS                  = acode.require('fs'); // https://acode-plugin-docs.vercel.app/docs/utilities/fs
+const AcodeFSO                 = acode.require('fsOperation'); // https://acode-plugin-docs.vercel.app/docs/utilities/fs
+const AcodeInputHints          = acode.require('inputHints'); // https://acode-plugin-docs.vercel.app/docs/helpers/input-hints
+const AcodeIntent              = acode.require('intent'); // https://acode-plugin-docs.vercel.app/docs/advanced-apis/intent
+const AcodeKeyboard            = acode.require('keyboard'); // https://acode-plugin-docs.vercel.app/docs/utilities/keyboard
+const AcodeLoader              = acode.require("loader"); // https://acode-plugin-docs.vercel.app/docs/ui-components/dialogs/loader
+const AcodeMultiPrompt         = acode.require('multiPrompt'); // https://acode-plugin-docs.vercel.app/docs/ui-components/dialogs/multi-prompt
+const AcodeOpenFolder          = acode.require('openFolder'); // https://acode-plugin-docs.vercel.app/docs/utilities/open-folder
+const AcodePalette             = acode.require('palette'); // https://acode-plugin-docs.vercel.app/docs/editor-components/palette
+const AcodePage                = acode.require('page'); // https://acode-plugin-docs.vercel.app/docs/editor-components/page
+const AcodeProjects            = acode.require('projects'); // https://acode-plugin-docs.vercel.app/docs/utilities/projects
+const AcodePrompt              = acode.require('prompt'); // https://acode-plugin-docs.vercel.app/docs/ui-components/dialogs/prompt
+const AcodeSelect              = acode.require('select'); // https://acode-plugin-docs.vercel.app/docs/ui-components/dialogs/select
+const AcodeSelectionMenu       = acode.require('selectionMenu'); // https://acode-plugin-docs.vercel.app/docs/ui-components/selection-menu
+const AcodeSettings            = acode.require('settings'); // https://acode-plugin-docs.vercel.app/docs/editor-components/settings
+const AcodeSidebarApps         = acode.require('sidebarApps'); // https://acode-plugin-docs.vercel.app/docs/interface-apis/sidebar-apps
+const AcodeSideButton          = acode.require('sideButton'); // https://acode-plugin-docs.vercel.app/docs/interface-apis/side-buttons
+const AcodeThemeBuilder        = acode.require('themeBuilder'); // https://acode-plugin-docs.vercel.app/docs/helpers/theme-builder
+const AcodeThemes              = acode.require('themes'); // https://acode-plugin-docs.vercel.app/docs/helpers/themes
+const AcodeToast               = acode.require('toast'); // https://acode-plugin-docs.vercel.app/docs/ui-components/toast
+const AcodeTutorial            = acode.require('tutorial'); // https://acode-plugin-docs.vercel.app/docs/ui-components/tutorial
+const AcodeURL                 = acode.require('Url'); // https://acode-plugin-docs.vercel.app/docs/utilities/url
+const AcodeWindowResize        = acode.require('windowResize'); // https://acode-plugin-docs.vercel.app/docs/utilities/window-resize
+```
+
+or like that
+
+```JS
 const _AceModes            = acode.require('aceModes'); // https://acode-plugin-docs.vercel.app/docs/utilities/ace-modes
 const _ActionStack         = acode.require('actionStack'); // https://acode-plugin-docs.vercel.app/docs/advanced-apis/action-stack
 const _Color               = acode.require('Color'); // https://acode-plugin-docs.vercel.app/docs/helpers/color
