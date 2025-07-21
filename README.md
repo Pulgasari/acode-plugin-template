@@ -44,8 +44,6 @@ official docs: https://acode-plugin-docs.vercel.app/docs/getting-started/intro
       init    : (baseUrl, $page) => {},
       destroy : () => {},
     };
-    const pluginId   = 'example-plugin';
-    const pluginName = 'Example Plugin';
     // Mount Plugin
     acode.setPluginInit( plugin.id, async (baseUrl, $page, settings) => {
       // Init Plugin
