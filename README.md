@@ -145,6 +145,15 @@ const _WindowResize        = acode.require('windowResize'); // https://acode-plu
 ### Access Global Acode Objects
 
 ```JS
+const AcodeCommands      = editorManager.editor.commands;
+const AcodeEditor        = editorManager.editor;
+const AcodeEditorManager = editorManager;
+const AcodeFiles         = editorManager.editor;
+```
+
+or like that
+
+```JS
 const _Commands      = editorManager.editor.commands;
 const _Editor        = editorManager.editor;
 const _EditorManager = editorManager;
